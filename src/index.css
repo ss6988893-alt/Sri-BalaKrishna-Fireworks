@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body text-maroon-darker bg-cream antialiased;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a,
+  button,
+  input,
+  textarea {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a:not([class*='cursor']),
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+
+  button:not(:disabled):active,
+  a:active {
+    filter: brightness(1.07) saturate(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

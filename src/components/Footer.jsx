@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa'
 import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from 'react-icons/hi'
 import brandLogo from '../assets/logo/sri-bala-krishna-combined-cropped.png'
+import bytebuildersLogo from '../assets/brand/bytebuilders-solutions.jpg'
 import { useLanguage } from '../context/LanguageContext'
 
 const quickLinks = [
@@ -98,6 +99,48 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <HiOutlineMail className="text-gold-light text-lg shrink-0" />
             <span>info@sribalakrishna.com</span>
+          </div>
+        </div>
+
+        <div className="mx-auto mt-6 flex max-w-2xl flex-col items-center justify-center gap-4 rounded-2xl border border-sky-400/25 bg-white/[0.04] px-5 py-4 text-center shadow-[0_12px_35px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-sky-400/50 hover:bg-white/[0.07] sm:flex-row sm:text-left">
+          <a
+            href="https://www.instagram.com/bytebuilders_solutions?igsi=MWg1YnNqcDB3anllZg=="
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Visit Bytebuilders Solutions on Instagram"
+            className="group shrink-0"
+          >
+            <img
+              src={bytebuildersLogo}
+              alt="Bytebuilders Solutions"
+              className="h-20 w-20 rounded-full border-2 border-sky-400/60 object-cover shadow-[0_0_22px_rgba(14,165,233,0.25)] transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3"
+            />
+          </a>
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-cream/50">
+              Website designed &amp; developed by
+            </p>
+            <a
+              href="https://www.instagram.com/bytebuilders_solutions?igsi=MWg1YnNqcDB3anllZg=="
+              target="_blank"
+              rel="noreferrer"
+              className="mt-1 inline-block font-display text-lg font-bold text-white transition-colors hover:text-sky-300"
+            >
+              Bytebuilders Solutions
+            </a>
+            <div className="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs sm:justify-start">
+              <a
+                href="https://www.instagram.com/bytebuilders_solutions?igsi=MWg1YnNqcDB3anllZg=="
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 transition-colors hover:text-sky-300"
+              >
+                <FaInstagram aria-hidden="true" /> @bytebuilders_solutions
+              </a>
+              <a href="tel:+918525058703" className="inline-flex items-center gap-1.5 transition-colors hover:text-sky-300">
+                <HiOutlinePhone aria-hidden="true" /> +91 85250 58703
+              </a>
+            </div>
           </div>
         </div>
 
